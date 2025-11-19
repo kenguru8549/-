@@ -10,11 +10,11 @@ class LoginPage:  #  Конструктор класса — это метод _
         self.error_message = page.locator('#errorAlert')  #  Сообщение об ошибке: у этого элемента есть идентификатор #errorAlert
 
 def navigate(self):  #  Метод navigate
-    """Открывает страницу логина."""
+   # """Открывает страницу логина."""
     self.page.goto('https://zimaev.github.io/pom/')
 
 def login(self, username: str, password: str):  #  Метод login
-    """Выполняет вход с заданными учетными данными."""
+  #  """Выполняет вход с заданными учетными данными."""
     self.username_input.fill(username)
     self.password_input.fill(password)
     self.login_button.click()
