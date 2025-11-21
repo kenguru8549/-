@@ -1,0 +1,1 @@
+from project.test2 import *
